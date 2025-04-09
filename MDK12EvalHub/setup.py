@@ -86,7 +86,7 @@ with open('README.md') as f:
 
 def do_setup():
     setup(
-        name='mdk12evalhub',
+        name='vlmeval',
         version='0.1.0',
         description='MDK12 Evaluation Tool',
         author='Pengfei Zhou',
@@ -105,7 +105,7 @@ def do_setup():
         ]),
         keywords=['AI', 'NLP', 'in-context learning'],
         entry_points={
-            'console_scripts': ['mdk12evalhub = mdk12evalhub:cli']
+            'console_scripts': ['vlmeval = vlmeval:cli']
         },
         classifiers=[
             'Programming Language :: Python :: 3.7',

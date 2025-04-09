@@ -34,3 +34,4 @@ timm
 latex2sympy2
 einops
 vllm
+qwen_vl_utils

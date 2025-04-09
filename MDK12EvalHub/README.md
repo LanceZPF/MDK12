@@ -53,7 +53,7 @@ Note that some MLLMs may not be able to run under certain flash-attention versio
 
 <a id="-citation"></a>
 ## 🖊️ Citation 
-If you feel MDK12 useful in your project or research, please kindly use the following BibTeX entry to cite our paper. Thanks!
+If you feel MDK12-Bench useful in your project or research, please kindly use the following BibTeX entry to cite our paper. Thanks!
 ```bibtex
 @misc{zhou2025mdk12,
       title={MDK12-Bench: A Multi-Discipline Benchmark for Evaluating Reasoning in Multimodal Large Language Models}, 

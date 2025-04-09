@@ -156,6 +156,7 @@ def evaluate_chat_model():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
+    parser.add_argument('--model-name', type=str, default='Eureka')
     parser.add_argument('--checkpoint', type=str, default='/inspire/hdd/ws-c6f77a66-a5f5-45dc-a4ce-1e856fe7a7b4/project/zhangkaipeng-24043/zhoupengfei/K12_onlinefilter_Episode10')
     parser.add_argument('--data-root', type=str, default='/inspire/hdd/ws-c6f77a66-a5f5-45dc-a4ce-1e856fe7a7b4/project/zhangkaipeng-24043/zkp/MDK12mini-medium', help='Directory containing TSV files to process')
     parser.add_argument('--num-beams', type=int, default=5)
@@ -168,6 +169,8 @@ if __name__ == '__main__':
     parser.add_argument('--load-in-4bit', action='store_true')
     parser.add_argument('--auto', action='store_true')
     args = parser.parse_args()
+
+    args.out_dir = os.path.join(args.out_dir, args.model_name)
 
     if not os.path.exists(args.out_dir):
         os.makedirs(args.out_dir)

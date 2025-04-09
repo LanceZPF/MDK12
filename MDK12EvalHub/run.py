@@ -194,19 +194,20 @@ def main():
 
     for _, model_name in enumerate(args.model):
         model = None
-        date, commit_id = timestr('day'), githash(digits=8)
-        eval_id = f"T{date}_G{commit_id}"
+        # date, commit_id = timestr('day'), githash(digits=8)
+        # eval_id = f"T{date}_G{commit_id}"
 
-        pred_root = osp.join(args.work_dir, model_name, eval_id)
-        pred_root_meta = osp.join(args.work_dir, model_name)
-        os.makedirs(pred_root_meta, exist_ok=True)
-
-        prev_pred_roots = ls(osp.join(args.work_dir, model_name), mode='dir')
-        if len(prev_pred_roots) and args.reuse:
-            prev_pred_roots.sort()
+        # pred_root = osp.join(args.work_dir, model_name, eval_id)
+        pred_root = osp.join(args.work_dir, model_name)
+        # pred_root_meta = osp.join(args.work_dir, model_name)
+        # os.makedirs(pred_root_meta, exist_ok=True)
 
         if not osp.exists(pred_root):
             os.makedirs(pred_root, exist_ok=True)
+            
+        prev_pred_roots = ls(osp.join(args.work_dir, model_name), mode='dir')
+        if len(prev_pred_roots) and args.reuse:
+            prev_pred_roots.sort()
 
         if use_config:
             model = build_model_from_config(cfg['model'], model_name)
@@ -424,10 +425,10 @@ def main():
                     for f in files:
                         cwd = os.getcwd()
                         file_addr = osp.join(cwd, pred_root, f)
-                        link_addr = osp.join(cwd, pred_root_meta, f)
-                        if osp.exists(link_addr) or osp.islink(link_addr):
-                            os.remove(link_addr)
-                        os.symlink(file_addr, link_addr)
+                        # link_addr = osp.join(cwd, pred_root_meta, f)
+                        # if osp.exists(link_addr) or osp.islink(link_addr):
+                        #     os.remove(link_addr)
+                        # os.symlink(file_addr, link_addr)
 
             except Exception as e:
                 logger.exception(f'Model {model_name} x Dataset {dataset_name} combination failed: {e}, '
