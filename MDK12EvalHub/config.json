@@ -1,0 +1,17 @@
+{
+    "model": {
+        "InternVL2-26B": {
+            "class": "InternVLChat",
+            "model": "InternVL2-26B",
+            "model_path": "/mnt/workspace/zpf/.cache/InternVL2_5-26B"
+        }
+    },
+    "data": 
+    {
+        "MathVision":
+        {
+            "class": "MathVision",
+            "dataset": "MathVision"
+        }
+    }
+}
