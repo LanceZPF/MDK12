@@ -21,7 +21,7 @@ MDK12-Bench is a comprehensive benchmark designed to evaluate the reasoning capa
 
 Please refer to [MDK12EvalHub](MDK12EvalHub/README.md) for your quick start.
 
-After setting up the environment following instructions in [Handbook](MDK12EvalHub/docs/Quickstart.md), you may refer to `quick-inference-qwenvl.py` for a very quick inference using [vLLM](https://github.com/vllm-project/vllm) project. Then you may directly refer to `judge.sh` to use our judge logic for evaluating the inference results and obtaining the final performance score. Make sure the API for judge model is set in `MDK12EvalHub/.env` before you run the `judge.sh`.
+After setting up the environment following instructions in [Handbook](MDK12EvalHub/docs/Quickstart.md), you may refer to `quick-inference-qwenvl.py` for a very quick inference using [vLLM](https://github.com/vllm-project/vllm) project. Then you may directly refer to `judge.sh` to use our judge logic for evaluating the inference results and obtaining the final performance score. Make sure the API for judge model is set in `MDK12EvalHub/.env` before you run the `judge.sh`. Finally, you can use `count_all_acc_per_disc.py` to summarize the performance on one subset.
 
 <a id="-datasets"></a>
 ## 📊 Datasets
