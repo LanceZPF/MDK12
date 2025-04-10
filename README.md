@@ -5,7 +5,7 @@
 This repository is the official implementation of [MDK12-Bench](https://arxiv.org/abs/2504.05782).
 
 > [MDK12-Bench: A Multi-Discipline Benchmark for Evaluating Reasoning in Multimodal Large Language Models](https://arxiv.org/abs/2504.05782)  
-> Pengfei Zhou*, Fanrui Zhang*, Xiaopeng Peng*, Zhaopan Xu, Jiaxin Ai, Yansheng Qiu, Chuanhao Li, Zhen Li, Ming Li, Yukang Feng, Jianwen Sun, Haoquan Zhang, Zizhen Li, Xiaofeng Mao, Wangbo Zhao, Kai Wang, Xiaojun Chang, Wenqi Shao, Yang You†, Kaipeng Zhang† <br>
+> Pengfei Zhou*, Fanrui Zhang*, Xiaopeng Peng*, Zhaopan Xu, Jiaxin Ai, Yansheng Qiu, Chuanhao Li, Zhen Li, Ming Li, Yukang Feng, Jianwen Sun, Haoquan Zhang, Zizhen Li, Xiaofeng Mao, Zekai Li, Wangbo Zhao, Kai Wang, Xiaojun Chang, Wenqi Shao, Yang You†, Kaipeng Zhang† <br>
 > <sup>\*</sup> Equal Contribution  
 > <sup>†</sup> Corresponding Author
 
