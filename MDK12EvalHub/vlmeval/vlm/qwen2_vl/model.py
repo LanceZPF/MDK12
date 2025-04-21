@@ -82,7 +82,7 @@ class Qwen2VLChat(Qwen2VLPromptMixin, BaseModel):
         system_prompt: str | None = None,
         post_process: bool = False,  # if True, will try to only extract stuff in the last \boxed{}.
         verbose: bool = False,
-        tensor_parallel_size: int = 2,
+        tensor_parallel_size: int = 1,
     ):
         super().__init__(use_custom_prompt=use_custom_prompt)
         self.min_pixels = min_pixels
@@ -103,7 +103,13 @@ class Qwen2VLChat(Qwen2VLPromptMixin, BaseModel):
         rank, world_size = get_rank_and_world_size()
         assert model_path is not None
         self.model_path = model_path
-        self.tensor_parallel_size = tensor_parallel_size
+
+        # Set tensor_parallel_size to the number of available GPUs, or use the provided value as fallback
+        try:
+            num_gpus = torch.cuda.device_count()
+            self.tensor_parallel_size = num_gpus if num_gpus > 0 else tensor_parallel_size
+        except:
+            self.tensor_parallel_size = tensor_parallel_size
         
         # MODEL_CLS = None  
         # if '2.5' in model_path:
@@ -231,12 +237,20 @@ class Qwen2VLChat(Qwen2VLPromptMixin, BaseModel):
         prompt = self.processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
         image_data, _ = self.process_vision_info(messages)
         
-        inputs = [{
-            "prompt": prompt,
-            "multi_modal_data": {
-                "image": image_data
-            },
-        }]
+        # Check if there's image data
+        if image_data:
+            inputs = [{
+                "prompt": prompt,
+                "multi_modal_data": {
+                    "image": image_data
+                },
+            }]
+        else:
+            # Handle case when there's no image data
+            inputs = [{
+                "prompt": prompt,
+                "multi_modal_data": None,
+            }]
         
         model_outputs = self.llm.generate(inputs, sampling_params=self.sampling_params)
         
