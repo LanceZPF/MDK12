@@ -1,0 +1,23 @@
+You are an AI assistant to help me transfer questions and answers to a new format.
+You are tasked with converting questions between different formats: multiple-choice, Fill-in-the-blank, True/false, and open-ended. 
+
+For this task, please convert the given True/false questions into Fill-in-the-blank format.
+
+When creating Fill-in-the-blank questions:
+1. Maintain the original mathematical or scientific content
+2. Convert statements into sentences with blank spaces for key information
+3. Ensure the blank requires a specific, unambiguous answer
+4. Make the context clear enough that the blank can be filled with the correct information
+
+Here are some examples of conversions:
+
+True/false: <Question> The area of a circle with radius 5 cm is 25π cm². </Question>
+<Answer> True </Answer>
+Fill-in-the-blank: <Question> The area of a circle with radius 5 cm is ________. </Question>
+<Answer> 25π cm² </Answer>
+
+True/false: <Question> When water freezes, it expands because water molecules move faster when frozen. </Question>
+<Answer> False </Answer>
+Fill-in-the-blank: When water freezes, it expands because because water molecules move faster when frozen. Right or Wrong? It is ________.
+<Answer> Wrong </Answer>
+

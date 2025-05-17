@@ -1,0 +1,32 @@
+You are an AI assistant to help me transfer questions and answers to a new format.
+You are tasked with converting questions between different formats: Multiple-choice, Fill-in-the-blank, true/false, and open-ended. 
+
+For this task, please convert the given Fill-in-the-blank questions into Multiple-choice format.
+
+When creating Multiple-choice questions:
+1. Maintain the original mathematical or scientific content
+2. Create 4 answer choices (A, B, C, D)
+3. Make sure one answer is correct and the others are plausible distractors
+4. Ensure the question stem is clear and complete
+
+Here are some examples of conversions:
+
+Fill-in-the-blank: <Question> The area of a circle with radius 5 cm is ________. </Question>
+<Answer> 25π cm² </Answer>
+Multiple-choice: <Question> What is the area of a circle with radius 5 cm? </Question>
+(A) 25π cm²
+(B) 10π cm²
+(C) 25 cm²
+(D) 5π cm²
+</Question>
+<Answer> (A) </Answer>
+
+Fill-in-the-blank: <Question> When water freezes, it expands because ________. </Question>
+<Answer> The hydrogen bonds in ice form a rigid, open crystal structure </Answer>
+Multiple-choice: <Question> Why does water expand when it freezes? </Question>
+(A) The hydrogen bonds in ice form a rigid, open crystal structure
+(B) Water molecules move faster when frozen
+(C) The density of water increases during freezing
+(D) Air bubbles get trapped in the ice crystals
+</Question>
+<Answer> (A) </Answer>

@@ -1,0 +1,23 @@
+You are an AI assistant to help me rephrase questions.
+Follow the given examples to rephrase the new question.
+
+Question: If $x^2+y^2=1$, what is the largest possible value of $|x|+|y|$?
+Rephrase the above question: For points $(x,y)$ that lie on the unit circle defined by the equation $x^2+y^2=1$, what is the maximum possible value of the sum of the absolute values of the coordinates, $|x|+|y|$?
+
+Question: Kevin Kangaroo begins hopping on a number line at 0. He wants to get to 1, but he can hop only $\frac{1}{3}$ of the distance. Each hop tires him out so that he continues to hop $\frac{1}{3}$ of the remaining distance. How far has he hopped after five hops? Express your answer as a common fraction.
+Rephrase the above question: Starting at 0 on a number line, Kevin Kangaroo aims to reach 1 by hopping only 1/3 of the distance each time. As he gets tired, he continues to hop 1/3 of the remaining distance. After completing five hops, what is the total distance he has covered, expressed as a common fraction?
+
+Question: A ball is thrown vertically upward with an initial velocity of 20 m/s. If the acceleration due to gravity is 10 m/s², how high will the ball rise?
+Rephrase the above question: When a ball is launched straight upward with an initial speed of 20 meters per second, and gravity causes a constant downward acceleration of 10 meters per second squared, what is the maximum height the ball will reach?
+
+Question: In a chemical reaction, 45 grams of a compound decomposed to 30 grams of products. What is the percentage yield of this reaction?
+Rephrase the above question: If 45 grams of a chemical compound breaks down into 30 grams of products during a decomposition reaction, what percentage of the original mass was converted to the final products?
+
+Question: A DNA strand contains 120 nucleotides, of which 30% are adenine. How many thymine nucleotides are present if adenine always pairs with thymine?
+Rephrase the above question: In a DNA molecule with 120 nucleotides, 30% of them are adenine bases. Given that adenine always forms a complementary pair with thymine, how many thymine nucleotides are found in this DNA strand?
+
+Question: The average annual rainfall in a tropical region is 250 cm. If the region experienced 300 cm of rainfall last year, what was the percentage increase from the average?
+Rephrase the above question: A tropical area typically receives an average of 250 centimeters of rain annually. If last year's rainfall measured 300 centimeters, by what percentage did the rainfall exceed the usual average?
+
+Question: If all valid logical statements of the form "If P, then Q" are true, and we know that "If it is raining, then the ground is wet" is true, what can we conclude if the ground is not wet?
+Rephrase the above question: Given that the logical statement "If it is raining, then the ground is wet" is true, and assuming all statements of the form "If P, then Q" follow standard logical rules, what logical conclusion can be drawn when we observe that the ground is not wet?

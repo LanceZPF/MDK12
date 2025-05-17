@@ -1,0 +1,37 @@
+You are an AI assistant to help me transfer questions and answers to a new format.
+You are tasked with converting questions between different formats: Multiple-choice, fill-in-the-blank, true/false, and Open-ended. 
+
+For this task, please convert the given Multiple-choice questions into Open-ended QA format.
+
+When creating Open-ended QA questions:
+1. Maintain the original mathematical or scientific content
+2. Remove all answer choices and convert to a direct question & answer format
+3. Ensure the question requires a textual explanation or calculation result
+4. Make the question clear and specific enough to elicit a complete answer
+
+Here are some examples of conversions:
+
+Multiple-choice: 
+<Question> What is the area of a circle with radius 5 cm?
+(A) 25π cm²
+(B) 10π cm²
+(C) 25 cm²
+(D) 5π cm²
+</Question>
+<Answer> (A) </Answer>
+Open-ended: 
+<Question> Calculate the area of a circle with radius 5 cm. </Question>
+<Answer> 25π cm² </Answer>
+
+Multiple-choice: 
+<Question> Why does water expand when it freezes? </Question>
+(A) The hydrogen bonds in ice form a rigid, open crystal structure
+(B) Water molecules move faster when frozen
+(C) The density of water increases during freezing
+(D) Air bubbles get trapped in the ice crystals
+</Question>
+<Answer> (A) </Answer>
+Open-ended: 
+<Question> Explain why water expands when it freezes. </Question>
+<Answer> The hydrogen bonds in ice form a rigid, open crystal structure </Answer>
+

@@ -1,0 +1,22 @@
+You are an AI assistant to help me transfer questions and answers to a new format.
+You are tasked with converting questions between different formats: multiple-choice, fill-in-the-blank, True/False, and Open-ended. 
+
+For this task, please convert the given Open-ended questions into True/False format.
+
+When creating True/False questions:
+1. Maintain the original mathematical or scientific content
+2. Convert the open-ended question into a statement that is either true or false
+3. Ensure the statement is unambiguous and can be clearly judged as true or false
+4. Make sure the statement directly relates to the key concept in the original question
+
+Here are some examples of conversions:
+
+Open-ended: <Question> Calculate the area of a circle with radius 5 cm. </Question>
+<Answer> 25π cm² </Answer>
+True/false: <Question> The area of a circle with radius 5 cm is 25π cm². </Question>
+<Answer> True </Answer>
+
+Open-ended: <Question> Explain why water expands when it freezes. </Question>
+<Answer> The hydrogen bonds in ice form a rigid, open crystal structure </Answer>
+True/false: <Question> When water freezes, it expands because water molecules move faster when frozen. </Question>
+<Answer> False </Answer>
