@@ -8,6 +8,8 @@
 
 See [Handbook](docs/Quickstart.md) for a quick start guide.
 
+Moreover, the codes of dynamic evaluation can be found at `Dynamic-K`.
+
 Other documents that facilitate the further optional exploratory development are provided in `docs`. For example, for developers interested in contributing to the code of framework, please check [Development Guide](MDK12EvalHub/docs/Development.md).
 
 <a id="-config"></a>
