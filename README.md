@@ -26,7 +26,7 @@ After setting up the environment following instructions in [Handbook](MDK12EvalH
 <a id="-datasets"></a>
 ## 📊 Datasets
 
-To be released.
+`MDK12mini-easy.zip`, `MDK12mini-medium.zip`, `MDK12mini-hard.zip` are all well-cleaned data of the MDK12mini set.
 
 <a id="-leaderboard"></a>
 ## 🏆 Leaderboard
